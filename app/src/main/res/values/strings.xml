@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Clinicus</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <array name="menuOptions">
+        <item>Home</item>
+        <item>Your Questions</item>
+        <item>Your Therapists</item>
+        <item>Your Groups</item>
+        <item>Settings</item>
+    </array>
+</resources>

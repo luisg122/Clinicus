@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sign_up_backgrounds"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:id="@+id/question1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:gravity="center"
+        android:text="Gender"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/question1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="184dp">
+
+        <RadioButton
+            android:id="@+id/user1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Male"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/user2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Female"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/user3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prefer not to say"
+            android:textColor="@color/white" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="Next"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:background="@drawable/dark_button"/>
+</RelativeLayout>

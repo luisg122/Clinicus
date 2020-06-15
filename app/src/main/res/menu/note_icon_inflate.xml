@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/addNotes"
+        android:title="Add a note"
+        android:orderInCategory="3"
+        app:actionLayout="@layout/clipboard_icon"
+        app:showAsAction="always"/>
+</menu>

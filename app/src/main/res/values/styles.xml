@@ -1,0 +1,139 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="HintText" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/purple</item>
+    </style>
+
+    <style name="LogInActivateLine">
+        <!-- for login page -->
+        <item name="colorControlActivated">@color/purple</item>
+    </style>
+
+    <style name="LogInActivateLineSignUp">
+        <item name="colorControlNormal">#FFFFFF</item>
+        <item name="colorControlActivated">#FFFFFF</item>
+        <item name="colorControlHighlight">#FFFFFF</item>
+    </style>
+
+    <style name="SignUpHintText" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <style name="MyDatePickerStyle"
+        parent="@android:style/Widget.Material.Light.DatePicker"
+        tools:targetApi="lollipop">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:datePickerMode">spinner</item>
+        <item name="android:colorControlNormal">@color/white</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:colorAccent">@color/white</item>
+        <item name="android:textColorHighlight">@color/white</item>
+        <item name="android:textColorLink">@color/white</item>
+    </style>
+
+    <!-- Theme of the toolbar mostly used in all activities of the app -->
+    <style name="AppTheme.NoActionBar">
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/customActivityAnimation</item>
+        <item name="android:navigationBarColor" tools:targetApi="lollipop">@color/black</item>
+    </style>
+
+    <style name="chatBotSpace" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimaryDark">@color/chatBotColor</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/customActivityAnimation</item>
+        <item name="android:navigationBarColor" tools:targetApi="lollipop">@color/black</item>
+    </style>
+
+    <style name="questionSpace" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimaryDark">@color/questionColor</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/customActivityAnimation</item>
+        <item name="android:navigationBarColor" tools:targetApi="lollipop">@color/black</item>
+    </style>
+
+    <style name="therapistSpace" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimaryDark">@color/therapistSpaceColor</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/customActivityAnimation</item>
+        <item name="android:navigationBarColor" tools:targetApi="lollipop">@color/black</item>
+    </style>
+
+    <style name="groupSpace" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimaryDark">@color/groupSpaceColor</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/customActivityAnimation</item>
+        <item name="android:navigationBarColor" tools:targetApi="lollipop">@color/black</item>
+    </style>
+
+    <style name="userNotes" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimaryDark">@color/userNotes</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/customActivityAnimation</item>
+        <item name="android:navigationBarColor" tools:targetApi="lollipop">@color/black</item>
+    </style>
+
+
+    <style name="firstScreen" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/customActivityAnimation</item>
+        <item name="android:navigationBarColor" tools:targetApi="lollipop">@color/black</item>
+    </style>
+
+    <style name="signUps" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimaryDark">#b2b2ff</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/customActivityAnimation</item>
+        <item name="android:navigationBarColor" tools:targetApi="lollipop">@color/black</item>
+        <item name="android:datePickerStyle">@style/MyDatePickerStyle</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat</item>
+    </style>
+
+    <!-- Styling/customizing the Toolbar -->
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/skyBlue</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">sans-serif</item>
+    </style>
+
+    <style name="customActivityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+
+    <style name="MyCardView" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.MaterialCardView.Cut</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.MaterialCardView.Cut" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">30dp</item>
+        <item name="cornerSizeTopLeft">30dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+    </style>
+</resources>
