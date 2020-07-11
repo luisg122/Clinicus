@@ -2,7 +2,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp">
+    android:layout_margin="8dp"
+    android:maxWidth="200dp">
 
     <LinearLayout
         android:id="@+id/userMsgLayout"
@@ -26,7 +27,7 @@
             android:layout_marginTop="4dp"
             android:text="abcdefgh"
             android:textColor="@color/black"
-            android:textSize="18sp"
+            android:textSize="15sp"
             android:paddingStart="20dp"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"

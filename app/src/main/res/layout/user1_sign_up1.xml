@@ -25,10 +25,10 @@
 
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/password_TextInputLayout"
+        android:id="@+id/lastName_TextInputLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/email_TextInputLayout"
+        android:layout_below="@+id/firstName_TextInputLayout"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
@@ -40,13 +40,15 @@
         android:layout_marginRight="20dp"
         android:theme="@style/LogInActivateLineSignUp"
         app:hintTextAppearance="@style/SignUpHintText"
-        app:layout_constraintTop_toBottomOf="@+id/email_TextInputLayout">
+        app:layout_constraintTop_toBottomOf="@+id/firstName_TextInputLayout"
+        app:errorEnabled="true"
+        app:errorTextAppearance="@style/error_appearance">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/password"
+            android:id="@+id/lastName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/password_TextInputLayout"
+            android:layout_alignBottom="@+id/lastName_TextInputLayout"
             android:hint="Last name"
             android:inputType="text"
             android:maxLines="1"
@@ -59,7 +61,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/email_TextInputLayout"
+        android:id="@+id/firstName_TextInputLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -74,10 +76,12 @@
         android:theme="@style/LogInActivateLineSignUp"
         app:hintTextAppearance="@style/SignUpHintText"
         app:layout_constraintTop_toBottomOf="@id/question2"
+        app:errorEnabled="true"
+        app:errorTextAppearance="@style/error_appearance"
         tools:layout_editor_absoluteX="20dp">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/email"
+            android:id="@+id/firstName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignTop="@+id/email_TextInputLayout"
@@ -104,6 +108,6 @@
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password_TextInputLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/lastName_TextInputLayout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

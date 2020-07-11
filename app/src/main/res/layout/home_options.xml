@@ -16,15 +16,15 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/chatBoxSpace"
             android:layout_width="match_parent"
-            android:layout_height="180dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="30dp"
-            app:cardCornerRadius="30dp"
+            android:layout_height="260dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="0dp"
+            app:cardCornerRadius="0dp"
             app:cardBackgroundColor="#AFC4EF"
-            app:cardElevation="8dp">
+            app:cardElevation="0dp">
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
@@ -63,16 +63,16 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/askQuestionSpace"
             android:layout_width="match_parent"
-            android:layout_height="180dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="30dp"
+            android:layout_height="260dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="0dp"
             android:layout_below="@+id/chatBoxSpace"
             app:cardBackgroundColor="#E7BAE7"
-            app:cardCornerRadius="30dp"
-            app:cardElevation="8dp">
+            app:cardCornerRadius="0dp"
+            app:cardElevation="0dp">
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
@@ -107,7 +107,7 @@
         </androidx.cardview.widget.CardView>
 
 
-        <androidx.cardview.widget.CardView
+        <!--<androidx.cardview.widget.CardView
             android:id="@+id/seeTherapist"
             android:layout_width="match_parent"
             android:layout_height="180dp"
@@ -150,22 +150,21 @@
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true"/>
             </RelativeLayout>
-        </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>-->
 
         <androidx.cardview.widget.CardView
             android:id="@+id/groupSpace"
             android:layout_width="match_parent"
-            android:layout_height="180dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="30dp"
-            android:layout_below="@+id/seeTherapist"
-            android:layout_marginBottom="30dp"
-            app:cardBackgroundColor="#B6F4D4"
-            app:cardCornerRadius="30dp"
-            app:cardElevation="8dp">
+            android:layout_height="260dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_below="@+id/askQuestionSpace"
+            android:layout_marginBottom="0dp"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="0dp">
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
@@ -180,16 +179,17 @@
                     android:layout_marginBottom="0dp"
                     android:background="@drawable/title_cover"/>
                 <ImageView
+                    android:id="@+id/notes_image"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="centerCrop"
                     android:adjustViewBounds="true"
                     android:tint="#66000000"
-                    app:srcCompat="@drawable/ic_groups"/>
+                    android:src="@drawable/notes_image"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Join a group"
+                    android:text="Take down notes"
                     android:textColor="@color/white"
                     android:textSize="25sp"
                     android:textStyle="bold"

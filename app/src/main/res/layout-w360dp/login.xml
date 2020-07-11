@@ -48,7 +48,11 @@
         android:layout_marginRight="20dp"
         android:theme="@style/LogInActivateLine"
         app:hintTextAppearance="@style/HintText"
-        app:layout_constraintTop_toBottomOf="@+id/email_TextInputLayout">
+        app:layout_constraintTop_toBottomOf="@+id/email_TextInputLayout"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/black"
+        app:errorEnabled="true"
+        app:errorTextAppearance="@style/error_appearance">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/password"
@@ -74,7 +78,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginEnd="20dp"
@@ -82,6 +86,8 @@
         android:theme="@style/LogInActivateLine"
         app:hintTextAppearance="@style/HintText"
         app:layout_constraintTop_toBottomOf="@+id/backgroundImageView"
+        app:errorEnabled="true"
+        app:errorTextAppearance="@style/error_appearance"
         tools:layout_editor_absoluteX="20dp">
 
         <com.google.android.material.textfield.TextInputEditText

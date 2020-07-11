@@ -24,17 +24,18 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp"
             android:hint="Last name"
             android:theme="@style/LogInActivateLineSignUp"
             app:endIconMode="clear_text"
             app:endIconTint="@color/white"
-            app:hintTextAppearance="@style/SignUpHintText">
+            app:hintTextAppearance="@style/SignUpHintText"
+            app:errorEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/registerLastName"
+                android:id="@+id/contactLastName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="text"
@@ -44,22 +45,23 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLayout2"
+            android:id="@+id/textInput2"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:hint="First name"
             android:theme="@style/LogInActivateLineSignUp"
             app:endIconMode="clear_text"
             app:endIconTint="@color/white"
-            app:hintTextAppearance="@style/SignUpHintText">
+            app:hintTextAppearance="@style/SignUpHintText"
+            app:errorEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/registerFirstName"
+                android:id="@+id/contactFirstName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="text"
@@ -70,25 +72,27 @@
 
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInput3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="20dp"
             android:hint="Phone number"
             android:theme="@style/LogInActivateLineSignUp"
-            android:layout_below="@+id/textInputLayout2"
+            android:layout_below="@+id/textInput2"
             app:endIconMode="clear_text"
             app:endIconTint="@color/white"
-            app:hintTextAppearance="@style/SignUpHintText">
+            app:hintTextAppearance="@style/SignUpHintText"
+            app:errorEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/registerPhoneName"
+                android:id="@+id/contactPhoneNumber"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="phone"
