@@ -46,7 +46,7 @@
 
     <!-- Theme of the toolbar mostly used in all activities of the app -->
     <style name="AppTheme.NoActionBar">
-        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorPrimaryDark">@color/black</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="android:windowAnimationStyle">@style/customActivityAnimation</item>
@@ -54,7 +54,7 @@
     </style>
 
     <style name="chatBotSpace" parent="Theme.AppCompat.NoActionBar">
-        <item name="colorPrimaryDark">@color/chatBotColor</item>
+        <item name="colorPrimaryDark">@color/black</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="android:windowAnimationStyle">@style/customActivityAnimation</item>
@@ -62,7 +62,7 @@
     </style>
 
     <style name="questionSpace" parent="Theme.AppCompat.NoActionBar">
-        <item name="colorPrimaryDark">@color/questionColor</item>
+        <item name="colorPrimaryDark">@color/black</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="android:windowAnimationStyle">@style/customActivityAnimation</item>
@@ -78,7 +78,7 @@
     </style>
 
     <style name="groupSpace" parent="Theme.AppCompat.NoActionBar">
-        <item name="colorPrimaryDark">@color/colorQuickActionsBackground</item>
+        <item name="colorPrimaryDark">@color/black</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="android:windowAnimationStyle">@style/customActivityAnimation</item>
@@ -103,7 +103,7 @@
     </style>
 
     <style name="signUps" parent="Theme.AppCompat.NoActionBar">
-        <item name="colorPrimaryDark">#b2b2ff</item>
+        <item name="colorPrimaryDark">@color/black</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="android:windowAnimationStyle">@style/customActivityAnimation</item>
@@ -146,5 +146,9 @@
 
     <style name="CustomAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
         <item name="android:windowBackground">@drawable/round_border</item>
+    </style>
+
+    <style name="Widget_NavigationItem_NoRipple">
+        <item name="android:colorControlHighlight">@android:color/transparent</item>
     </style>
 </resources>

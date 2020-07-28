@@ -42,7 +42,9 @@
         android:layout_gravity="start"
         android:background="@color/white"
         android:fitsSystemWindows="true"
+        android:theme="@style/Widget_NavigationItem_NoRipple"
         app:itemTextColor="@color/black"
         app:headerLayout="@layout/nav_header"
-        app:menu="@menu/menu_main"/>
+        app:menu="@menu/menu_main"
+        app:itemBackground="@drawable/drawer_item_background"/>
 </androidx.drawerlayout.widget.DrawerLayout>

@@ -1,9 +1,12 @@
 package com.example.dialogflowapplication;
 
+import android.content.Context;
 import android.content.Intent;
+import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
 import android.widget.VideoView;
@@ -22,6 +25,7 @@ public class FirstScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.first_screen_container);
         setUpViews();
+        focusAudio();
         initiateVideo();
         setUpClickListeners();
     }
@@ -30,6 +34,11 @@ public class FirstScreen extends AppCompatActivity {
         videoView = (VideoView) findViewById(R.id.videoView);
         signIn    = (Button) findViewById(R.id.signInButton);
         signUp    = (Button) findViewById(R.id.signUpButton);
+    }
+
+    public void focusAudio(){
+        AudioManager am = (AudioManager) getApplicationContext().getSystemService(Context.AUDIO_SERVICE);
+        am.requestAudioFocus(null, AudioManager.STREAM_MUSIC, AudioManager.AUDIOFOCUS_GAIN);
     }
 
     public void setUpClickListeners(){
@@ -55,7 +64,7 @@ public class FirstScreen extends AppCompatActivity {
         Uri uri = Uri.parse("android.resource://"
                 + getPackageName()
                 + "/"
-                + R.raw.sea);
+                + R.raw.startup_vid);
         videoView.setVideoURI(uri);
         videoView.start();
         videoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {

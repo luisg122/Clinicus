@@ -18,6 +18,7 @@
     <color name="darkGray">#696969</color>
 
     <color name="userNotes">#71c5e7</color>
+    <color name="mainColor">#243f57</color>
 
 
     <color name="colorSearchIcon">#DBDBDB</color>
@@ -36,4 +37,6 @@
     <color name="colorSearchBarBackground">#333333</color>
 
     <color name="barBackground1">#292929</color>
+
+    <color name="transparent">#00ffffff</color>
 </resources>

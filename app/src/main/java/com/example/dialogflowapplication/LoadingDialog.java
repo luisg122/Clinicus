@@ -52,11 +52,7 @@ public class LoadingDialog {
         // Call super onResume after sizing
     }
 
-
-
     void dismissDialog(){
         alertDialog.dismiss();
     }
-
-
 }

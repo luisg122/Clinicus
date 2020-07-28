@@ -57,7 +57,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:background="@null"
-            android:fontFamily="@font/ubuntu_regular"
+            android:fontFamily="@font/ubuntu_bold"
             android:hint="Search Notes"
             android:imeOptions="actionDone"
             android:importantForAutofill="no"
@@ -65,7 +65,7 @@
             android:inputType="text"
             android:textColor="@color/white"
             android:textColorHint="@color/colorTextHint"
-            android:textSize="13sp"/>
+            android:textSize="18sp"/>
     </LinearLayout>
     
     <androidx.recyclerview.widget.RecyclerView

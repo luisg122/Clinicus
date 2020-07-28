@@ -73,7 +73,7 @@ public class MessageActivity extends AppCompatActivity {
     public void setUpToolbar(){
         toolbar = findViewById(R.id.toolbar);
         toolbar.setTitle("Olli's Message Space");
-        toolbar.setNavigationIcon(R.drawable.ic_white_arrow_back);
+        toolbar.setNavigationIcon(R.drawable.ic_arrow_back_black_24dp);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

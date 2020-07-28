@@ -13,13 +13,15 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#FFF"
         tools:context="com.example.dialogflowapplication.ChannelActivity">
 
         <com.getstream.sdk.chat.view.ChannelHeaderView
             android:id="@+id/channelHeader"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFF"
+            android:background="@color/chatBotColor"
+            app:streamChannelHeaderLastActiveTextColor="@color/black"
             app:streamChannelHeaderBackButtonShow="true"
             app:layout_constraintEnd_toStartOf="@+id/messageList"
             app:layout_constraintStart_toStartOf="parent"

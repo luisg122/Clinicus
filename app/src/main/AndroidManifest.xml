@@ -122,9 +122,16 @@
 
         <activity
             android:name="com.example.dialogflowapplication.ChannelActivity"
+            android:theme="@style/chatBotSpace"
             android:screenOrientation="portrait"
             android:hardwareAccelerated="true"
             tools:ignore="LockedOrientationActivity"/>
+
+        <activity
+            android:name=".AskQuestionActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"/>
+
 
         <activity
             android:name="com.example.dialogflowapplication.FirstScreen"

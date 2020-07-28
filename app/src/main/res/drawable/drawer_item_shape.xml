@@ -1,0 +1,11 @@
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <corners
+                android:bottomRightRadius="30dp"
+                android:topRightRadius="30dp"/>
+            <solid android:color="@color/chatBotColor"/>
+        </shape>
+    </item>
+</layer-list>
